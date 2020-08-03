@@ -29,7 +29,7 @@ let urlDB;
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/savage_cafe'
 } else {
-    urlDB = 'mongodb+srv://AleFullStack:1867DanLula@cluster0-p2jik.mongodb.net/savage_cafe'
+    urlDB = process.env.MONGO_URI;
 }
 
 // mongodb://localhost:27017/savage_cafe'
