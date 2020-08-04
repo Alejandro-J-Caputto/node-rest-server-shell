@@ -11,7 +11,12 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 ///////////////////////////////
-app.use(require('./routes/usuario.crud'))
+
+//CONFIGURACIOM GLOBAL DE RUTAS
+app.use(require('./routes/index'))
+
+
+
 //
 /* HEMOS MOVIDO LAS RUTAS A USUARIO.CRUD.JS */
 
